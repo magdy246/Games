@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Game/sign up</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="image/logo-sm.png" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+</head>
+
+<body class="body">
+    <div class="position-fixed top-0 start-0 bottom-0 end-0 body-bg"></div>
+    <div class="section">
+        <div class="container">
+            <div class="row full-height justify-content-center">
+                <div class="col-12 text-center align-self-center py-5">
+                    <div class="section allContact pb-5 pt-5 pt-sm-2 text-center">
+                        <h6 class="text-white mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+                        <label for="reg-log" class="d-none">.</label>
+                        <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+                        <label for="reg-log"></label>
+                        <div class="card-3d-wrap mx-auto">
+                            <div class="card-3d-wrapper">
+                                <div class="card-front">
+                                    <div class="center-wrap">
+                                        <div class="section text-center" id="update">
+                                            <h4 class="text-white-50 mb-4 pb-3">Log In</h4>
+                                            <div class="form-group">
+                                                <input type="email" class="form-style" placeholder="Your Email"
+                                                    id="logEmail">
+                                                <div id="alert"
+                                                    class="d-none alert alert-danger d-flex align-items-center py-0 mb-0 mt-1">
+                                                    <i class="fa-solid fa-circle-exclamation"></i>Enter an email as =>
+                                                    mmm@gmail.com
+
+                                                </div>
+                                                <i class="input-icon fa-solid fa-at"></i>
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <input type="password" name="logpass" class="form-style"
+                                                    placeholder="Your Password" id="logPass">
+                                                <div id="alert"
+                                                    class="d-none alert alert-danger d-flex align-items-center py-0 mb-0 mt-1">
+                                                    <i class="fa-solid fa-circle-exclamation"></i>Enter a password as =>
+                                                    abCS123@3
+                                                </div>
+                                                <i class="input-icon fa-solid fa-unlock-keyhole"></i>
+                                                <div class="d-none" id="eye-icon-log"><i
+                                                        class="eye-icon fa-regular fa-eye"></i></div>
+                                                <div id="eye-icon-slash-log"><i
+                                                        class="eye-icon fa-regular fa-eye-slash"></i></div>
+                                            </div>
+                                            <a href="#" id="logSubmit"
+                                                class="text-white-50 btn button-1 mt-4 fw-bolder">LOG IN</a>
+                                            <div id="switch-sign" class="d-none mt-2 text-warning">Click on the arrow at
+                                                the top to go to (Sign Up) <i
+                                                    class="fa-solid fa-arrow-up-long fs-3 text-primary"></i></div>
+                                            <div id="successful" class="d-none mt-2 text-warning">Success <i
+                                                    class="fa-solid fa-check fs-3 text-primary ms-2"></i></div>
+                                            <div id="invalid" class="d-none mt-2 text-warning">Invalid Email<i
+                                                    class="fa-solid fa-exclamation fs-5 text-primary ms-2"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="center-wrap">
+                                        <div class="section text-center" id="update">
+                                            <h4 class="text-white-50 mb-4 pb-3">Sign Up</h4>
+                                            <div class="form-group">
+                                                <input type="text" name="signname" class="form-style"
+                                                    placeholder="Your Full Name" id="signName">
+                                                <div id="alert"
+                                                    class="d-none alert alert-danger d-flex align-items-center py-0 mb-0 mt-1">
+                                                    <i class="fa-solid fa-circle-exclamation"></i>Enter your name as =>
+                                                    Ahmed , ahmed
+                                                </div>
+                                                <i class="input-icon fa-solid fa-user"></i>
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <input type="email" name="signemail" class="form-style"
+                                                    placeholder="Your Email" id="signEmail">
+                                                <div id="alert"
+                                                    class="d-none alert alert-danger d-flex align-items-center py-0 mb-0 mt-1">
+                                                    <i class="fa-solid fa-circle-exclamation"></i>Enter an email as =>
+                                                    mmm@gmail.com
+
+                                                </div>
+                                                <i class="input-icon fa-solid fa-at"></i>
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <input type="password" name="signpass" class="form-style"
+                                                    placeholder="Your Password" id="signPass">
+                                                <div id="alert"
+                                                    class="d-none alert alert-danger d-flex align-items-center py-0 mb-0 mt-1">
+                                                    <i class="fa-solid fa-circle-exclamation"></i>Enter a password as =>
+                                                    abCS123@3
+                                                </div>
+                                                <i class="input-icon fa-solid fa-unlock-keyhole"></i>
+                                                <div class="d-none" id="eye-icon-sign"><i
+                                                        class="eye-icon fa-regular fa-eye"></i></div>
+                                                <div id="eye-icon-slash-sign"><i
+                                                        class="eye-icon fa-regular fa-eye-slash"></i></div>
+                                            </div>
+                                            <a href="#" id="signSubmit"
+                                                class="text-white-50 btn button-1 mt-2 fw-bolder">SIGN UP</a>
+                                            <div id="switch-log" class="d-none text-warning">Click on the arrow at the
+                                                top to go to (Log In) <i
+                                                    class="fa-solid fa-arrow-up-long fs-3 text-primary"></i></div>
+                                            <div id="alert-message" class="d-none text-warning">You should fill in all
+                                                fields</div>
+                                            <div id="Existed" class="d-none mt-2 text-warning">Email Existed<i
+                                                    class="fa-solid fa-exclamation fs-5 text-primary ms-2"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='./js/scripte.js'></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

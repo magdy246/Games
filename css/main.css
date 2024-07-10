@@ -1,0 +1,237 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+html body {
+    background-color: var(--main-color);
+}
+
+@font-face {
+    font-family: 'Comfortaa-B';
+    src: url(../webfonts/Comfortaa-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Margarine-R';
+    src: url(../webfonts/Margarine-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Recursive-B';
+    src: url(../webfonts/Recursive-Bold.ttf);
+}
+
+:root {
+    /*&&&&&&&&&&&&&& COLORs &&&&&&&&&&&&&&*/
+    --scroll-bar-border: #1c1e20;
+    --scroll-bar-color: #262a2f;
+    --scroll-bar-bg: #32383e;
+    --main-color: #272b30;
+    --secondry-color: #fff;
+    --black-color: #000;
+    --navbar-color: #3a497b;
+    --free-card: #0d6efd;
+    --hover-color: #0099cc;
+    --box-shadow: 0px 1px 20px #000;
+    /*&&&&&&&&&&&&&& FONTs &&&&&&&&&&&&&&*/
+    --Comfortaa-B: "Comfortaa-B";
+    --Margarine-R: "Margarine-R";
+    --Recursive-B: "Recursive-B";
+    /*&&&&&&&&&&&&&& OTHERs &&&&&&&&&&&&&&*/
+    --transition: 0.8s all;
+}
+
+/*^^^^^^ HEADER ^^^^^^*/
+#header {
+    background-color: var(--main-color);
+    background-image: url(../image/wraper.png);
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+}
+
+#spanUser {
+    text-shadow: 0px 0px 20px #0f0e0e;
+    font-family: var(--Margarine-R);
+    font-weight: bold;
+}
+
+.div-btn {
+    background-color: #0001;
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+/*^^^^^^ NAVBAR ^^^^^^*/
+#navBar nav {
+    height: 4rem;
+    background-color: var(--navbar-color);
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-brand {
+    font-family: var(--Recursive-B);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#navBar img {
+    width: 48px;
+}
+
+#navBar .nav-link {
+    font-family: var(--Comfortaa-B);
+    font-size: 12.25px;
+    color: var(--secondry-color);
+    transition: var(--transition);
+}
+
+#navBar .nav-link:hover,
+#navBar .nav-link:focus,
+#navBar .nav-link:active {
+    color: var(--hover-color);
+}
+
+#navBar .nav-link:active {
+    font-weight: bold;
+}
+
+@media (max-width : 991px) {
+    #navBar .navbar-toggler:focus {
+        box-shadow: 0px 0px 0px transparent;
+    }
+
+    #navBar .collapse {
+        backdrop-filter: blur(30px);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    #navBar .nav-link {
+        margin-left: 10px;
+        color: var(--black-color);
+    }
+}
+
+/*^^^^^^ CARDS ^^^^^^*/
+figure img {
+    filter: grayscale(100%);
+    transition: var(--transition);
+}
+
+.card {
+    transition: var(--transition);
+}
+
+.card:hover figure img {
+    filter: grayscale(0);
+}
+
+.card:hover figcaption span {
+    background-color: var(--free-card);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+figcaption h3 {
+    font-size: 14px;
+    font-family: var(--Recursive-B);
+}
+
+figcaption span {
+    font-size: 12px;
+    font-family: var(--Comfortaa-B);
+    background-color: var(--navbar-color);
+    transition: var(--transition);
+}
+
+.pra-header {
+    width: 14.0625rem;
+    height: 3.75rem;
+}
+
+.style-card p {
+    font-size: 14px;
+    font-family: var(--Comfortaa-B);
+}
+
+.card-body span {
+    padding: 3.675px 6.852px;
+    background-color: var(--scroll-bar-bg);
+}
+
+/*^^^^^^ INFO ^^^^^^*/
+.bg-infoormation {
+    background-color: var(--main-color);
+}
+
+#info header h1,
+#info h3 {
+    font-family: var(--Recursive-B);
+}
+
+#detailsContent,
+#info header {
+    font-family: var(--Comfortaa-B);
+}
+
+/*^^^^^^ SCROLL BAR ^^^^^^*/
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scroll-bar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scroll-bar-color);
+    border: 3px solid var(--scroll-bar-border);
+    border-radius: 30px;
+}
+
+/*^^^^^^ LOADER ^^^^^^*/
+.Loader {
+    background-color: #0007;
+    z-index: 9999;
+}
+
+.loader {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
