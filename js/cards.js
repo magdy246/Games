@@ -21,6 +21,8 @@ export class Cards {
     let category;
     if ((category = e)) {
       category = $(e.target).attr("id");
+      $(".nav-link").not($(e.target)).removeClass("active");
+      $(e.target).addClass("active");
     } else {
       category = "mmorpg";
     }
@@ -45,7 +47,7 @@ export class Cards {
                             </figure>
                             <figcaption class="game-name d-flex justify-content-between align-items-center">
                                 <h3 class="text-white h6">${data[i].title}</h3>
-                                <span class="p-2 text-white rounded-2">free</span>
+                                <span class="px-2 py-1 text-white rounded-2">free</span>
                             </figcaption>
                             <p class="pra-header text-center text-white opacity-50 mb-0 mx-auto">
                             ${data[i].short_description

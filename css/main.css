@@ -95,6 +95,10 @@ html body {
     color: var(--hover-color);
 }
 
+#navBar .active:visited
+{
+    color: var(--hover-color);
+}
 #navBar .nav-link:active {
     font-weight: bold;
 }
