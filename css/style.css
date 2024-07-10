@@ -11,18 +11,16 @@
     background-color: #ffeba7;
 }
 
-.body-bg {
-    background-color: #0009;
-}
-
 .body {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     line-height: 1.7;
     color: #c4c3ca;
-    background-image: url(../image/venom.jpg);
-    background-size: cover;
+    background-color: #272b30;
+    background-image: url(../image/wraper.png);
     background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
     overflow: hidden;
 }
 
@@ -69,10 +67,11 @@ span::before {
     right: 0;
     position: absolute;
     transform: translateY(-17%);
-    border: 40px solid #0741ff;
+    border: 40px solid #001149;
     border-radius: 30px;
     border-width: 12px;
     z-index: -1;
+    box-shadow: 0px 0px 20px #fff;
 }
 
 .section {

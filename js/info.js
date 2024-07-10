@@ -35,11 +35,8 @@ export class Info {
             <p>Status: <span class="badge text-bg-info"> ${
               data.status
             }</span> </p>
-            <p class="small">${data.description
-              .split(" ")
-              .slice(0, 250)
-              .join(" ")}</p>
-            <a class="btn btn-outline-warning text-white" target="_blank"
+            <p class="small">${data.description}</p>
+            <a class="btn btn-outline-warning text-white mb-5" target="_blank"
             href="${data.game_url}">Show Game</a>
             </div>
             </div>
