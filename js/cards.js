@@ -21,8 +21,8 @@ export class Cards {
     let category;
     if ((category = e)) {
       category = $(e.target).attr("id");
-      $(".nav-link").removeClass("active");
-      $(e.target).closest(".nav-link").addClass("active");      
+      $(".nav-link").not($(e.target)).removeClass("active");
+      $(e.target).addClass("active");
     } else {
       category = "mmorpg";
     }
